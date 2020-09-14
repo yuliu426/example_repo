@@ -32,4 +32,12 @@ Next we show a scatterplot of `y` vs `x`.
 ggplot(plot_df, aes(x = x, y = y)) + geom_point()
 ```
 
-![](rmd_basic_plots_files/figure-markdown_github/yx_scatter-1.png)
+![](rmd_basic_plots_files/figure-markdown_github/yx_scatter-1.png) lastly, we show a histogram of the 'y' variable.
+
+``` r
+ggplot(plot_df, aes(x = x)) + geom_histogram()
+```
+
+    ## `stat_bin()` using `bins = 30`. Pick better value with `binwidth`.
+
+![](rmd_basic_plots_files/figure-markdown_github/y_hist-1.png)
